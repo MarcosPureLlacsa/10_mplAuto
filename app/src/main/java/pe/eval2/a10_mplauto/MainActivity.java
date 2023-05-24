@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnConsultar;
+    Button btnConsultar, btnListar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +22,19 @@ public class MainActivity extends AppCompatActivity {
                 IrConsultarAuto();
             }
         });
+        btnListar= findViewById(R.id.btnInicioIrListarAuto);
+        btnListar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                IrListarAuto();
+            }
+        });
 
+    }
+
+    private void IrListarAuto() {
+        Intent intent = new Intent(this, ConsultarImagenAuto.class);
+        startActivity(intent);
     }
 
     private void IrConsultarAuto() {

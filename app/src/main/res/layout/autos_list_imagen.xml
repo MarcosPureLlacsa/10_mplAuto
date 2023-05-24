@@ -3,42 +3,46 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+
+
+    >
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:background="@drawable/border"
+        >
         <ImageView
             android:id="@+id/uli_idimagen"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginRight="10dp"
+            android:layout_margin="10dp"
             app:srcCompat="@drawable/ic_imagen_lista" />
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
             <TextView
                 android:id="@+id/uli_idDocumento"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="25dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="ID" />
+                android:text="ID"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                />
             <TextView
                 android:id="@+id/uli_idConductor"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="2dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nombre" />
+                android:text="Nombre"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
         </LinearLayout>
     </LinearLayout>
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:text=""
-        android:layout_marginTop="10dp"
-        android:background="@color/colorAccent"
-        />
 </LinearLayout>
