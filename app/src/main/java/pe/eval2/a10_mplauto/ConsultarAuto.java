@@ -36,6 +36,7 @@ public class ConsultarAuto extends AppCompatActivity implements Response.Listene
     JsonObjectRequest jsonObjectRequest;
     ImageView campoImagen;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
